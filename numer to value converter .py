@@ -1,6 +1,4 @@
 def words_to_number(text):
-    """Convert number words to numeric value"""
-
     # Define word-to-number mappings
     ones = {
         'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,
@@ -23,7 +21,7 @@ def words_to_number(text):
         'trillion': 1000000000000
     }
 
-    # Clean and split the input text
+    
     text = text.lower().replace('-', ' ').replace(' and ', ' ')
     words = text.split()
 
@@ -45,13 +43,13 @@ def words_to_number(text):
     return result + current
 
 
-# Main program
+
 if __name__ == "__main__":
     print("=" * 50)
     print("  Number Words to Value Converter")
     print("=" * 50)
 
-    # Test examples
+
     test_cases = [
         "two hundred",
         "fifty five",
@@ -69,7 +67,7 @@ if __name__ == "__main__":
         value = words_to_number(test)
         print(f'"{test}" => {value}')
 
-    # Interactive input
+
     print("\n--- Try Your Own ---\n")
     while True:
         user_input = input("Enter a number in words (or 'quit' to exit): ")
