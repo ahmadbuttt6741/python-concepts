@@ -23,6 +23,6 @@ acc1.reset_pass()
 acc2 = InstaAccount("9999", "pass123")
 print(acc2.fb_account)
 print(acc2.insta_account)
-
+ 
 
 
